@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Largest Number</title>
+</head>
+<body>
+
+<div id="root"></div>
+
+<script>
+    let a = Number(prompt("Enter first number"));
+    let b = Number(prompt("Enter second number"));
+    let c = Number(prompt("Enter third number"));
+
+    switch (true) {
+        case (a >= b && a >= c):
+            document.getElementById("root").innerHTML = "Largest number = " + a;
+            break;
+
+        case (b >= a && b >= c):
+            document.getElementById("root").innerHTML = "Largest number = " + b;
+            break;
+
+        default:
+            document.getElementById("root").innerHTML = "Largest number = " + c;
+    }
+</script>
+
+</body>
+</html>

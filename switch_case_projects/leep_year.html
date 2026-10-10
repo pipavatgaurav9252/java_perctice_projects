@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year</title>
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+    <script>
+        let year = Number(prompt("Enter your year"));
+
+        switch (true) {
+            case (year % 400 == 0):
+                document.getElementById("root").innerHTML = "This is a leap year";
+                break;
+
+            case (year % 100 == 0):
+                document.getElementById("root").innerHTML = "This is not a leap year";
+                break;
+
+            case (year % 4 == 0):
+                document.getElementById("root").innerHTML = "This is a leap year";
+                break;
+
+            default:
+                document.getElementById("root").innerHTML = "This is not a leap year";
+        }
+    </script>
+
+</body>
+
+</html>

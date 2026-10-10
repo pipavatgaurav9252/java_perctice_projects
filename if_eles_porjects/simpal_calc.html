@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Simple Calculator</title>
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+    <script>
+        let a = Number(prompt("Enter first number"));
+        let op = prompt("Enter operator (+, -, *, /)");
+        let b = Number(prompt("Enter second number"));
+
+        if (op == "+") {
+            document.getElementById("root").innerHTML = a + b;
+        }
+        else if (op == "-") {
+            document.getElementById("root").innerHTML = a - b;
+        }
+        else if (op == "*") {
+            document.getElementById("root").innerHTML = a * b;
+        }
+        else if (op == "/") {
+            document.getElementById("root").innerHTML =
+                b != 0 ? a / b : "Cannot divide by zero";
+        }
+        else {
+            document.getElementById("root").innerHTML =
+                "Invalid Operator";
+        }
+    </script>
+
+</body>
+
+</html>

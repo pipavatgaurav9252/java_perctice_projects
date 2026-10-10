@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div id="root"></div>
+
+    <script>
+        let result = "";
+
+        for (let i = 1; i <= 50; i++) {
+            if (i % 2 != 0) {
+                result += i + "<br>";
+            }
+        }
+
+        document.getElementById("root").innerHTML = result;
+    </script>
+</body>
+
+</html>

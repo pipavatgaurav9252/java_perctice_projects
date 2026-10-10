@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="root"></div>
+
+<script>
+let marks = Number(prompt("Enter your marks"));
+
+switch (true) {
+    case (marks < 0 || marks > 100):
+        document.getElementById("root").innerHTML = "Invalid input";
+        break;
+
+    case (marks >= 90):
+        document.getElementById("root").innerHTML = "A+ Grade";
+        break;
+
+    case (marks >= 80):
+        document.getElementById("root").innerHTML = "B+ Grade";
+        break;
+
+    case (marks >= 70):
+        document.getElementById("root").innerHTML = "C+ Grade";
+        break;
+
+    case (marks >= 60):
+        document.getElementById("root").innerHTML = "D Grade";
+        break;
+
+    case (marks >= 35):
+        document.getElementById("root").innerHTML = "E Grade";
+        break;
+
+    default:
+        document.getElementById("root").innerHTML = "You are failed";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div id="root"></div>
+
+    <script>
+        let str = prompt("Enter a string").toLowerCase();
+        let count = 0;
+
+        for (let i = 0; i < str.length; i++) {
+            if ("aeiou".includes(str[i])) {
+                count++;
+            }
+        }
+
+        document.getElementById("root").innerHTML = "Total vowels = " + count;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest Number</title>
+</head>
+<body>
+
+<div id="root"></div>
+
+<script>
+    let a = Number(prompt("Enter first number"));
+    let b = Number(prompt("Enter second number"));
+
+    switch (true) {
+        case (a > b):
+            document.getElementById("root").innerHTML = "Largest number = " + a;
+            break;
+
+        case (b > a):
+            document.getElementById("root").innerHTML = "Largest number = " + b;
+            break;
+
+        default:
+            document.getElementById("root").innerHTML = "Both numbers are equal";
+    }
+</script>
+
+</body>
+</html>
